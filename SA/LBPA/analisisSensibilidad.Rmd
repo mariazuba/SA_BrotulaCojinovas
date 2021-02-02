@@ -1,0 +1,146 @@
+---
+title: "AnalisisSensibilidad"
+output: pdf_document
+---
+
+
+```{r setup, include=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(patchwork)
+library(knitr)
+```
+
+
+Análisis de sensibilidad de la mortalidad natural 
+
+
+```{r, warning=FALSE, eval=FALSE, echo=TRUE}
+system('~/admb-12.2/admb LBPA')
+system('./LBPA')
+```
+
+```{r echo=FALSE, eval=TRUE}
+#source('~/IFOP/Escritos/LBPA/LBPA_Guide/read.admb.R')
+source(paste(getwd(),'/read.admb.R',sep=""))
+```
+
+```{r echo=TRUE, eval=TRUE, message=FALSE}
+data <-read.rep('LBPA.rep')
+```
+
+```{r}
+dat <- readLines("lbpa.dat",encoding="UTF-8")
+dat2<-dat
+
+M <- c(seq(0.1,0.38,0.02),0.24)
+
+par<-as.numeric(strsplit(dat[3],"\t")[[1]])
+par[3]
+
+for(i in 1:length(M)){
+dat2[3]<-paste(60.400,  0.250,  M[i], -7.825,  2.950, 43.500, 53.000,  0.875,sep="\t")
+
+cat(dat2,file=(can<-file("lbpa.dat","wb",encoding="UTF-8")),sep="\n")
+close(can)
+
+system('./LBPA')
+
+rep<-readLines("LBPA.rep",encoding="UTF-8")
+cat(rep,file=(can<-file(paste("LBPA",i,".rep",sep=""),"wb",encoding="UTF-8")),sep="\n")
+close(can)
+}
+
+
+```
+
+
+```{r}
+
+tabla <- matrix(ncol=7,nrow=16)
+
+for(i in 1:16){
+data <-read.rep(paste('LBPA',i,'.rep',sep=""))
+tabla[i,] <-  round(data$F_L50_slope_a0_cv_Lr_Ftar,2)
+}
+
+tablafin<-cbind(M,tabla)
+colnames(tablafin) <- c("M","F Current", "L50", "Slope", "a0", "cv", "Lr", "F Target")
+kable(tablafin)
+
+
+
+```
+
+
+```{r}
+age      <- seq(1,10) #this age depend of your specie
+BinLen   <- data$Length_bins
+NObsFre  <- length(data$Observed_frequencies[,1]) #this numbers of observations depend of the own data
+ObsFre   <- data$Observed_frequencies
+PredFre  <- data$Predicted_frequency 
+CatchLFre<- data$Catch_length_frequency 
+ProbLen  <- data$Probability_of_length
+Nage     <- length(data$Probability_of_length[,1])
+```
+
+
+```{r F1, echo=FALSE, fig.cap="Outputs of different relative Length estimated in LBPA" }
+data <-read.rep(paste('LBPA',1,'.rep',sep=""))
+L1 <- (data$Length_frequency_of_exploitable_population_current_target_unfished[1,])
+L2 <- (data$Length_frequency_of_exploitable_population_current_target_unfished[2,])
+L3 <- (data$Length_frequency_of_exploitable_population_current_target_unfished[3,])
+
+L123 <- ggplot(data=NULL, aes(x=BinLen))+
+  geom_line(aes(y = L1, colour = 'Current'),  size = 1)+
+  geom_line(aes(y = L2, colour = 'Target'), size = 1)+
+  geom_line(aes(y = L3, colour = 'Unfished'), size = 1)+
+  scale_color_manual(name = '',
+                     values = c('red1', 'gold2', 'green'),
+                     limits = c('Current', 'Target','Unfished'),
+                     breaks = c('Current', 'Target','Unfished')) +
+  theme(legend.position = 'bottom') + ylab('Relative Frecuency') + xlab('Length (mm.)') +
+  theme_bw()
+L123
+```
+
+```{r F2, echo=FALSE, fig.cap="Outputs of different relative Length estimated in LBPA" }
+data <-read.rep(paste('LBPA',6,'.rep',sep=""))
+L1 <- (data$Length_frequency_of_exploitable_population_current_target_unfished[1,])
+L2 <- (data$Length_frequency_of_exploitable_population_current_target_unfished[2,])
+L3 <- (data$Length_frequency_of_exploitable_population_current_target_unfished[3,])
+
+L123 <- ggplot(data=NULL, aes(x=BinLen))+
+  geom_line(aes(y = L1, colour = 'Current'),  size = 1)+
+  geom_line(aes(y = L2, colour = 'Target'), size = 1)+
+  geom_line(aes(y = L3, colour = 'Unfished'), size = 1)+
+  scale_color_manual(name = '',
+                     values = c('red1', 'gold2', 'green'),
+                     limits = c('Current', 'Target','Unfished'),
+                     breaks = c('Current', 'Target','Unfished')) +
+  theme(legend.position = 'bottom') + ylab('Relative Frecuency') + xlab('Length (mm.)') +
+  theme_bw()
+L123
+```
+
+
+
+```{r F3,echo=FALSE, fig.cap="Outputs of different relative Length estimated in LBPA" }
+data <-read.rep(paste('LBPA',10,'.rep',sep=""))
+L1 <- (data$Length_frequency_of_exploitable_population_current_target_unfished[1,])
+L2 <- (data$Length_frequency_of_exploitable_population_current_target_unfished[2,])
+L3 <- (data$Length_frequency_of_exploitable_population_current_target_unfished[3,])
+
+L123 <- ggplot(data=NULL, aes(x=BinLen))+
+  geom_line(aes(y = L1, colour = 'Current'),  size = 1)+
+  geom_line(aes(y = L2, colour = 'Target'), size = 1)+
+  geom_line(aes(y = L3, colour = 'Unfished'), size = 1)+
+  scale_color_manual(name = '',
+                     values = c('red1', 'gold2', 'green'),
+                     limits = c('Current', 'Target','Unfished'),
+                     breaks = c('Current', 'Target','Unfished')) +
+  theme(legend.position = 'bottom') + ylab('Relative Frecuency') + xlab('Length (mm.)') +
+  theme_bw()
+L123
+```
+
