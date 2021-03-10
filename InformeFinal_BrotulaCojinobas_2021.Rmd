@@ -1,0 +1,627 @@
+---
+title: 
+lang: es
+output: pdf_document
+toc: TRUE
+header-includes:
+- \usepackage{draftwatermark}
+- \SetWatermarkText{}
+- \usepackage{fancyhdr}
+- \usepackage{graphicx}
+- \usepackage{parskip}
+- \pagestyle{fancy}
+- \usepackage{geometry}
+- \geometry{top=1.5cm, bottom=1cm, left=2.5cm, right=2.5cm}
+- \usepackage{helvet}
+- \renewcommand{\familydefault}{\sfdefault}
+
+- \newcommand{\sietepuntos}{\fontsize{7pt}{\baselineskip}\selectfont}
+- \newcommand{\cincopuntos}{\fontsize{6pt}{\baselineskip}\selectfont}
+
+- \addtolength{\headheight}{4.5\baselineskip}
+- \setlength{\headheight}{70pt}
+- \setlength{\footskip}{5pt}
+- \setlength{\textheight}{658pt}
+- \fancyhead[CO,CE]{\includegraphics[height=1.5cm]{logoifop.png}\\ \sietepuntos INSTITUTO DE FOMENTO PESQUERO / DIVISION INVESTIGACION PESQUERA}
+- \fancyhead[LO,LE]{ }
+- \fancyhead[RO,RE]{ }
+- \renewcommand{\headrulewidth}{0.5pt}
+- \fancyfoot[C]{\cincopuntos \thepage \\ \vspace{-0.2cm} ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ \\ \vspace{-0.2cm} \cincopuntos CONVENIO DE DESEMPEÑO 2020 IFOP/SUBSECRETARÍA DE ECONOMíA Y EMT \\ \vspace{-0.1cm} INFORME FINAL. BRÓTULA, COJINOBA PLOMA Y COJINOBA MOTEADA, 2021}
+---
+
+\pagebreak
+\normalsize
+# RESUMEN EJECUTIVO
+
+\pagebreak
+\normalsize
+# 1. OBJETIVOS
+
+## 1.1. Objetivo general
+
+En el marco del establecimiento de cuotas globales y anuales de captura, se implementará el Procedimiento de Manejo (PM) vigente para la pesquería de brótula, cojinoba ploma y cojinoba moteada, determinando el estatus en base a los datos e información establecida y aplicando la regla de control de captura que corresponda según el plan de manejo o el que se adopte en ausencia de este.
+
+## 1.2. Objetivos específicos
+
+i.	Detallar y protocolizar el procedimiento de manejo vigente para la pesquería.
+
+ii.	Implementar el procedimiento de manejo, determinando el estatus del recurso y la captura biológicamente aceptable (CBA).
+
+iii.	Evaluar bajo incertidumbre la probabilidad de alcanzar los objetivos de manejo en plazos definidos bajo el procedimiento de manejo vigente.
+
+iv.	Detallar y analizar las fuentes de incertidumbre relevantes asociadas a errores de observación, de modelo, de proceso, de estimación y de implementación.
+
+
+
+\pagebreak
+\normalsize
+# 2. ANTECEDENTES 
+
+La actividad pesquera en Chile se ha situado como una de las áreas que ha liderado el crecimiento de la economía nacional. Dicho proceso se ha basado tanto en los niveles de producción y exportaciones de la pesca extractiva, así como también, en el rápido desarrollo de la acuicultura. 
+
+Por mandato legal, la función pública en la gestión de la actividad pesquera y de la acuicultura le corresponde a la Subsecretaria de Pesca y Acuicultura y al Ministerio de Economía, Fomento y Turismo, instituciones responsables de fijar las políticas y establecer las medidas de regulación que tienen por objetivo conformar el marco legal y normativo para brindar las condiciones más adecuadas para el desarrollo sustentable de la actividad de la pesca y la acuicultura. Para cumplir adecuadamente ese rol resulta esencial contar con fundamentos científicos y técnicos sólidos en cuanto al conocimiento del estado de conservación de los recursos biológicos y su ambiente, así como también, del desempeño de la actividad extractiva.
+
+Con el objeto de atender la misión y sus objetivos estratégicos, la Subsecretaría de Pesca y Acuicultura identifica y encarga al Instituto de Fomento Pesquero (IFOP) ejecutar los programas de seguimiento y monitoreo de las pesquerías, así como también, la evaluación de stock y análisis de capturas recomendables para los principales recursos pesqueros, todos financiados con fondos sectoriales de asignación directa. 
+
+En los últimos 23 años, IFOP ha realizado anualmente las evaluaciones de stock y estimaciones de capturas totales permisibles de los principales recursos pesqueros de Chile. Esto ha servido de base biológica para las medidas de conservación que la Subsecretaria de Pesca y Acuicultura ha aplicado. Las metodologías para la evaluación de stock han progresado notablemente como así mismo las capacidades de IFOP, razón por lo cual el instituto se ha consolidado a nivel nacional y latinoamericano como la institución con la capacidad científico/técnica para desarrollar una evaluación de stock moderna en variadas especies, lo cual le ha exigido avanzar en un programa de revisión por pares independientes.
+
+El artículo 1° B de la Ley de Pesca, indica que su objetivo es la conservación y el uso sostenible de los recursos hidrobiológicos, mediante la aplicación del enfoque precautorio en la toma de decisiones, de un enfoque ecosistémico en la administración pesquera y la salvaguarda de los ecosistemas marinos en que existan dichos recursos. Este contexto general, considera además tener en cuenta al momento de adoptar las medidas de conservación y administración así como al interpretar y aplicar la ley, lo siguiente:  a) establecer objetivos de largo plazo para la conservación y administración de las pesquerías y protección de sus ecosistemas así como la evaluación periódica de la eficacia de las medidas adoptadas y b) aplicar en la administración y conservación de los recursos hidrobiológicos y la protección de sus ecosistemas el principio precautorio (artículo 1° B de la Ley de Pesca).
+
+Para ello, el presente documento entrega los resultados del levantamiento de datos disponibles en todas las fuentes de información y la propuesta para la implementación de metodologías de evaluación de stock en los recursos brótula, cojinoba moteada y cojinoba del sur, identificados por parte de la 
+
+Subsecretaría de Pesca y Acuicultura como pesquerías de creciente relevancia en el contexto socio económico de la zona sur de Chile. 
+
+## 2.1.	Antecedentes de los recursos
+
+En Chile se desarrollan diferentes pesquerías orientadas a la captura de especies demersales. En este ambiente cohabitan un importante número de especies de diferentes grupos taxonómicos, las cuales, dada su interacción biológica con los recursos de interés, son capturadas durante las faenas de pesca. En este caso, brótula *Salilota australis*, cojinoba moteada *Seriolella punctata* y cojinoba del sur *Seriolella caerulea* son un conjunto de especies que comparten características pesqueras y biológicas similares y que históricamente son parte de la captura incidental de recursos objetivos de la pesquería demersal austral a través de barcos de arrastre, ya sea de media agua o de fondo, como merluza del sur *Merluccius australis*, congrio dorado *Genypterus blacodes*, merluza de cola *Macruronus magellanicus* y merluza de tres aletas *Micromesistius australis* (Galvez, 2016). En el principio de la explotación de recursos pesqueros demersales en Chile, estas especies eran parte de la captura incidental dado que carecían de valor comercial y generaban complejidades operacionales en cuanto a privilegiar la capacidad de bodega de la embarcación para el almacenamiento de la pesca objetivo.
+
+En la última década se ha reconocido a las especies capturadas como pesca incidental como una práctica habitual en aguas chilenas (San Martín *et al*., 2016), por lo cual se ha posicionado como un problema crítico necesario de abordar, manejar y resolver. El ser consideradas parte de las capturas incidentales de la flota de arrastre, ha determinado un reducido interés en estudiar aspectos sobre su historia de vida, y los esfuerzos por acortar la brecha de conocimiento son reducidos  (Bernal *et al*., 2018). La caracterización de aspectos biológicos básicos como distribución latitudinal/batimétrica, reproducción, alimentación o estructura poblacional, son antecedentes relevantes para avanzar en el conocimiento del estatus de estas poblaciones.
+
+La brótula es una especie demersal, sobre la cual existe escasa información tanto biológica como de evaluación pesquera. Su biología ha sido objeto de estudio por autores como Cousseau (1993), Wöhler *et al*. (1999) y Chong *et al*. (2017). Con respecto a su pesquería, esta se desarrolla principalmente en la zona sur austral de Chile, presentando una extensa historia de desembarques, a partir del año 1979, que muestran cambios temporales en sus magnitudes (Chong *et al*., 2017). 
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Figuras/Imagen 1.jpg}
+\end{center}
+
+\textbf{Figura 1}. Ejemplar de brótula Salilota australis. (Fuente: http://www.fishbiosystem.ru).\vspace{0.5cm} \normalsize
+
+
+La familia Centrolophidae congrega 7 géneros (*Centrolophus*, *Hyperoglyphe*, *Icichthys*, *Psenopsis*, *Schedophilus*, *Seriolella*, *Tubbia*) y 28 especies (Haedrich, 2003; Nelson, 2006). El género *Seriolella* (también conocidos como warehou, ruff, cojinobas) es un taxón que congrega las especies *S. brama*, *S. porosa*, *S. tinro*, *S. violacea*, *S. caerulea* y *S. punctata*, todas endémicas del hemisferio sur (Nelson, 2006). *S. caerulea* y *S. punctata* de interés particular en este trabajo se presentan en la **Figura 2**. En aguas chilenas se reporta la presencia de cuatro especies de cojinoba: cojinoba del norte *Seriolella violacea*, cojinoba moteada o azul *Seriolella punctata* y savorín *Seriolella porosa*, cojinoba del sur *Seriolella caerulea* (Acuña *et al*., 1998; Pequeño *et al*., 2004), solo la cojinoba moteada y del sur las dos últimas especies serán consideras en este estudio. Al igual que lo señalado para brótula existe, escasa información sobre estas especies en aguas chilenas.
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Figuras/Imagen 2.jpg}
+\end{center}
+
+\textbf{Figura 2}. Ejemplar de cojinoba del sur o ploma (*S. caerulea*) y cojinoba moteada (*S. punctatus*) (Fuente: CSIRO).
+\vspace{0.5cm} \normalsize
+
+
+## 2.2.	Distribución del recurso y localización del área de estudio
+
+La brótula es un pez gadiforme que se distribuye en aguas subantárticas que circulan dirección sur-norte a ambos lados del extremo austral de Sudamérica. En el Pacífico sur-austral esta especie habita desde los 40°S hasta los 57°S en profundidades entre 50 y 900 m, incluyendo los canales y fiordos de la zona austral de Chile (Avilés & Aguayo, 1979). La cojinoba del sur y cojinoba moteada se encuentran en las costas de Australia, Nueva Zelandia, Chile (incluyendo el archipielago Juan Fernández) y Argentina. En las costas de Nueva Zelanda las cojinobas son especies recurrentes en las capturas de merluza de cola (hoki), calamar y barracuda (Horn & Sutton, 1996; Jacob *et al*., 1998; Ballara & Anderson, 2009). En Australia *S. brama *y *S. punctata* constituyen recursos pesqueros objetivos (Robinson *et al*., 2008), además de ser fauna acompañante en el arrastre de fondo para la captura de la gamba Penaeus plebejus y granadero azul Macruronus novaezelandiae (Kennelly *et al*., 1998; Knuckey & Liggins, 1999; Horn, 2001). Sobre la plataforma continental argentina se encuentra *S. punctata*, *S. caerulea* y el savorín *S. porosa* (Cousseau *et al*., 1993), esta última especie bycatch frecuente en las capturas de merluza común y de cola (Menni & Gosztonyi, 1982; Garciarena & Perrotta, 2002; Eder *et al*., 2017).
+
+El trabajo que sustenta el análisis exploratorio de los datos para una eventual aplicación de un modelo de evaluación de stock, está enfocado principalmente en aguas de las regiones de Los Lagos, Aysén del General Carlos Ibáñez del Campo y de Magallanes y de la Antártica Chilena (**Figura 3**). Esta área es conocida como la Pesquería Demersal Austral (PDA). La PDA se desarrolla en la zona austral de Chile, iniciando a fines de los 70 y con la participación de flotas artesanales (aguas interiores) e industriales (aguas exteriores). La PDA se delimita administrativamente en dos unidades de pesquería, la unidad norte del 41,28 al 47 y la unidad sur 47°LS al sur, zonas que para efectos de este análisis de evaluación, no son separadas como unidades poblacionales, dado que aun no se cuenta con evidencia para ello.
+ 
+ \begin{center}
+\includegraphics[width=0.8\textwidth]{Figuras/Imagen 3.jpg}
+\end{center}
+
+\textbf{Figura 3}. Área de estudio sobre la cual se formula el estudio para brótula y cojinobas en el extremo sur de Sudamérica y focalización del área de estudio (recuadro), Chile (41°28,6’ L.S. al sur.).
+\vspace{0.5cm} \normalsize
+
+### 2.1.1. Desembarques
+
+La pesquería de brótula, cojinoba moteada y cojinoba del sur no tienen medidas administrativas pesqueras, sin establecimiento de cuotas anuales de captura ni tampoco regulaciones relativas a vedas y/o a tallas mínimas legales. La captura de estas tres especies es realizada principalmente por barcos de arrastre, consideradas por la legislación pesquera de Chile, como industriales, cuya pesquería históricamente ha reportado a la brótula y cojinobas como especies parte de la fauna acompañante de la pesquería demersal austral, como merluza del sur Merluccius australis, congrio dorado Genypterus blacodes, merluza de cola Macruronus magellanicus y merluza de tres aletas Micromesistius australis (Chong *et al*., 2017). De acuerdo a Céspedes *et al*. (2017) las 2 especies de cojinobas tuvieron algunos inconvenientes respecto a su identificación previo al año 1982, es por eso que para este análisis se consideró solo la última parte de la serie.
+
+Hasta 1978, las estadísticas oficiales de desembarques en Chile etiquetaban a todas las especies de Seriolella como Neptomenus crassus (Starks 1906). Más tarde, esas cuatro especies fueron reconocidas bajo el nombre de S. violacea, en un período que coincide con el pico en los desembarques con alrededor de 11.300 t. durante 1981. Altos niveles de desembarques de Seriolella sp. provocaron mejoras en el sistema de monitoreo e identificación, agregando también S. caerulea como especies incluidos en los libros de registro y estadísticas oficiales. Aunque la diferenciación adecuada de S. violacea y S. caerulea comenzó entre 1982 y 1988, revisiones recientes de datos históricos sugirieron que S. punctata había sido subreportada y erróneamente etiquetados en los desembarques como S. violacea (Céspedes et al., 2017). Aunque S. punctata ha sido registrados en bitácoras desde 1989, los desembarques se registraron correctamente solo desde 2001, lo que muestra un aumento de alrededor de 39.500 t de desembarques acumulados en la última década. Recientemente un pico de 6.241 t fue reportado durante la temporada 2016 de Chile (SERNAPESCA, 2017) (**Figura 4**).
+
+Con respecto a brótula, Chile ha tenido una extensa historia de desembarques, existiendo registros a partir del año 1979, que muestran cambios temporales de los desembarques nacionales en la zona sur-austral, donde se diferencian tres periodos (**Figura 4**). El primer periodo (1979-1988) es un reflejo de la evolución en los niveles de captura que mostró la flota industrial (Chong *et al*., 2017). El segundo periodo (1989-1997) muestra una reducción acelerada de los desembarques hasta niveles menores de 500 t el año 1996, que parece respondió a la reducción del esfuerzo de pesca sobre especies objetivo más que al impacto de la pesquería sobre la población de brótula. En efecto, entre 1992 y 1994 la zona de canales y fiordos de la zona austral de Chile fueron cerradas a la flota industrial, lo que derivó en una fuerte reducción de embarcaciones y en el esfuerzo de pesca (Quiroz *et al*., 2008; Céspedes *et al*., 2009). El tercer periodo (1998-2017) parece ser independiente de la dinámica sobre las especies objetivo y conforma un escenario donde la brótula paulatinamente se ha convertido en especie objetivo, principalmente asociado a la actividad de la flota arrastrera fábrica (Céspedes *et al*., 2009 & Chong *et al*., 2017).
+
+
+
+\textbf{Figura 4}. Desembarques oficiales anuales de brótula, cojinoba moteada y cojinoba del sur entre los años 1979 y 2019 para las regiones X, XI y XII (fuente: SERNAPESCA).
+\vspace{0.5cm} \normalsize
+
+Con estas revisiones, se desprende que, para los tres recursos objetivos, las series de desembarques son relativamente confiables desde el año 1980. Previo a este periodo, se debería realizar un trabajo analítico más exhaustivo para determinar con mayor rigor los datos de desembarques (**Tabla 1**). 
+
+
+\textbf{Tabla 1}. Desembarques oficiales por tipo de flota para las especies brótula, cojinoba moteada y del sur para las X, XI y XII regiones en el sur de Chile. Fuente: Elaboración propia a partir de información de SERNAPESCA (2019).
+\vspace{0.5cm} \normalsize
+
+
+
+
+### 2.1.2. Crecimiento, reproducción y mortalidad natural
+
+Los antecedentes biológicos de las especies provienen principalmente de estudios realizados en la zona sur austral de Chile y Argentina como también estudios en Nueva Zelanda, donde también se distribuyen estas especies. Chong *et al*. (2017) señalan a brótula como una especie de tipo desovante parcial o fraccionado con una estación reproductiva concentrada en entre los meses de mayo y octubre. Esta estrategia de desove es característica en la biología evolutiva orientada a preservar descendencia frente a cambios ambientales que afectan la mortalidad natural (Nikolsky, 1963; Vizziano & Berois, 1990). En el Atlántico sur-austral, Otero et al. (1981) y Wöhler (1987) describieron cambios a lo largo del año en la distribución geográfica de brótula, concentrándose durante invierno y dispersándose durante el verano. Arkhipkin *et al*. (2010) reportaron desoves parciales de brótula con una fecundidad potencial elevada (0,5-9 millones de huevos) comparada con especies de la misma familia (Moridae), con intensos procesos de agregación cerca del fondo marino en zonas de aguas frías aledañas a sistemas de surgencia (patrón reportado previamente por Ciechomski & Booman, 1981). Este autor también reporta que las hembras desovarían a una longitud media de 47,07 cm LT encontrando diferencias entre ambos sexos. 
+
+En el caso de las cojinobas moteada y del sur, los estudios sugieren que de acuerdo a la presencia de folículos post-ovulatorios e índice gonadosomático se reconoce que estas especies son desovantes parciales con máximos estacionales de actividad reproductiva. La extensión temporal y estación varían entre las especies y zonas. En costas de Nueva Zelanda la cojinoba moteada (*S. punctatus*) presenta un desove primaveral (Septiembre – Noviembre) (Grimes y Roberton, 1981; Patchell *et al*., 1987). En la costa este de Australia la cojinoba azul (*S. brama*) desarrolla al menos tres eventos reproductivos por año, con una máxima actividad reproductiva durante el invierno (Knuckey y Sivakumaran, 1999). En aguas chilenas el patrón estacional invernal es similar, la cojinoba del norte, del sur y moteada presentan una mayor actividad reproductiva con desoves parciales entre mayo y octubre (Aguayo *et al*., 1990; Oliva *et al*., 1996).  Estimaciones de fecundidad indican que la cojinoba moteada tiene ovocitos de un tamaño de 1,14 mm. Estos ovocitos son más pequeños que los ovocitos de cojinoba del sur (Grimes y Roberton, 1981; Patchell *et al*., 1987; Knuckey y Sivakumaran, 1999).
+
+La longitud de primera madurez sexual (L50) de cojinobas varía entre las especies y zonas. La cojinoba moteada en Nueva Zelandia maduraría entre los 30-40 cm (3 años) (Grimes y Roberton, 1981). De acuerdo a Chong, *et al*. (in press.) las hembras de S. caerulea y S. punctata, presentarían valores de 43,5 cm de longitud horquilla (95% C.I. = 42,7 – 44,2 cm) para hembras de S. caerulea y 37,2 cm de talla total (95% C.I. = 35,9 – 37,9 cm), respectivamente. Mientras que la proporción mensual de hembras maduras (Estados de madurez $\geq$ 3) fue superior al 60% durante todo el período de estudio, la mayor proporción de adultos surgió en otoño e invierno austral (> 80%). La proporción sexual de la cojinoba del norte capturada en el norte de Chile es 1:1 (Oliva *et al*., 1999), sin embargo, en la zona sur-austral, en cojinoba moteada existe una predominancia de 70% de hembras (Aguayo y Chong, 1991). Esto último es similar a lo observado en la costa este de Australia, donde hembras de cojinoba azul dominan sobre un 60%, lo cual tiende a aumentar hacia tallas superiores a 50 cm (Knuckey y Sivakumaran, 1999) lo cual puede también responder a los artes de pesca utilizados.
+
+Las cojinobas son especies de rápido crecimiento, alcanzando en el primer año el 50% de su longitud asintótica (Garciarena y Perrotta, 2002). El crecimiento se reduce marcadamente desde los 4 años, al inicio de su madurez sexual (Horn y Sutton, 1996). En las costas de Nueva Zelanda la cojinoba moteada presenta edad 0 a una longitud de 20 cm, alcanzando las hembras una edad máxima de 19+ años (Loo de 54,5 cm, k=0,33), y machos 17 años (Loo de 51,8 cm, k=0,41). La mortalidad natural para hembras y machos es 0,2-0,3 y 0,25, respectivamente. Más del 80% de la captura en Nueva Zelanda corresponde a individuos sobre 42 cm, mayores a 3+ años (Horn & Sutton, 1996). En aguas argentinas se reporta que el savorín alcanza una edad máxima de 11 años, una longitud asintótica de 49 cm (k=0.154), una mortalidad natural de 0,274 y no presentaría diferencias significativas de crecimiento entre sexos (Garciarena & Perrotta, 2002).  En Chile, la cojinoba moteada presenta un crecimiento similar entre sexos, con una longitud asintótica de 53,38 cm en machos y 55,20 cm en hembras. En cuanto al crecimiento en peso, este varía entre sexos, sobre todo desde los 4 años de edad, lo cual podría estar relacionado al desarrollo gonádico (Aguayo y Chong, 1991). La edad máxima de la cojinoba moteada es de 8 años, siendo menos longeva que la cojinoba del sur que alcanza los 10 años (Aguayo y Chong, 1991). En general los parámetros de crecimiento de la cojinoba moteada entre diferentes ecosistemas muestran valores similares, siendo una especie aparentemente de mayor longitud asintótica y crecimiento que otras especies del género, como el savorín en aguas argentinas (Wohler, Cassia y Hansen, 2001)
+
+Respecto a los parámetros de crecimiento de brótula, los únicos estudios han sido realizados en Argentina, donde Cassia & Hansen (2005) y Wohler  (2001) determinaron los parámetros  dentro del proceso de evaluación de stock en el atlántico sudoccidental, donde determinaron que la edad máxima  para hembras y machos fue de 15 años (Loo de 82,4 cm, k=0,123) con una mortalidad natural  de 0,28 para ambos sexos. Estimando de igual forma los parámetros de madurez a la edad.
+
+El resumen de la información mencionada anteriormente para las tres especies se presenta en la **Tabla 2**.
+
+\textbf{Tabla 2}. Parámetros de reproducción, crecimiento y mortalidad natural reportados para brótula y cojinobas en diferentes estudios.
+\vspace{0.5cm} \normalsize
+
+### 2.1.3. Monitoreo de la pesquería
+
+El período de análisis de los datos disponibles de la pesquería para este reporte, se basó principalmente en lo realizado por IFOP a través de su programa de monitoreo de pesquerías demersales, periodo que abarca desde los años 1997 a 2018. Sin embargo, y de acuerdo a información extraoficial, existen datos del monitoreo desde el año 1978, los cuales serán incorporados en futuras revisiones.
+
+
+
+
+#### a) Estructura tallas de las capturas 
+\quad
+Este análisis corresponde al número de ejemplares, por rango de talla capturados por la flota. En términos generales el diseño de muestreo asociado a la estructura de tallas del desembarque, corresponde a un diseño en tres etapas, es decir, un muestreo dentro de un viaje, lance y ejemplares. El indicador se obtiene por estratos de zona y mes inicialmente, a través de la ponderación de la estructura de talla con la captura diaria o temporal evaluada de las embarcaciones. Para la brótula fue posible reconstruir las estructuras de talla por año y por mes. Es posible reconocer que los meses con mayor disponibilidad de recursos muestreados en los lances de pesca, fueron mayo, septiembre y octubre. Desde el año 2009, la actividad y registro de este recurso se ha expandido para la mayoría de los meses del año Respecto a la estructura de tallas por sexo y por año es posible identificar cambios en las modas a través de los años. Cabe mencionar que de acuerdo a (Cassia & Hansen, 2005) la proporción de sexos de esta especie es 1:1, similar a lo estimado en este estudio (**Figura 5**, **Figura 6**, **Figura 7**).
+\vspace{0.5cm}
+
+\begin{center}
+\includegraphics[width=0.95\textwidth]{Figuras/Imagen 5.png}
+\end{center}
+
+\textbf{Figura 5}. Estructura de tallas por año y por sexo de  brótula en la X, XI y XII Región entre los años 1997 y 2018. La línea roja representa el L50% de madurez a 47,4 cm descrito por Chong *et al*. (2017) (1=macho, 2=hembra, 0 = indeterminado).
+\vspace{0.5cm} \normalsize
+
+
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Figuras/Imagen 6.png}
+\end{center}
+
+\textbf{Figura 6}. Estructura de talla por año y por sexo obtenida de cojinoba moteada en la X, XI y XII regiones entre los años 1997 y 2018. La línea roja representa el L50% de madurez a 37,5 cm descrito por Chong *et al* (in press) (1=macho, 2=hembra, 0 = indeterminado).
+\vspace{0.5cm} \normalsize
+
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Figuras/Imagen 7.png}
+\end{center}
+
+\textbf{Figura 7}. Estructura de tallas por año y por sexo de cojinoba del sur en la X, XI y XII regiones entre los años 1997 y 2018. La línea roja representa el L50% de madurez a 43.2 cm descrito por Chong *et al* (in press) (1=macho, 2=hembra, 0 = indeterminado).
+\vspace{0.5cm} \normalsize
+
+
+
+En la **Tabla 3** se resumen el número de ejemplares monitoreados por IFOP para el periodo comprendido entre 1997 y 2018 para las tres especies objetivo de este estudio, los cuales sustentan los análisis referidos a sus tallas. Con esta tabla es posible identificar que cojinoba del sur es la especie que menores registros tiene en la serie analizada. Durante los años 2003-2004 y 2010-2015 no se pudieron generar estructuras de tallas informativas para este recurso.
+
+
+\textbf{Tabla 3}. Número de ejemplares monitoreados por IFOP por sexo para las especies de brótula y cojinobas en las regiones X, XI y XII.
+\vspace{0.5cm} \normalsize
+
+En la mayoría de las variables analizadas, las tallas tuvieron gran proporción de individuos bajo la talla de primera madurez sexual.  Para cojinoba moteada las tallas de las capturas estuvieron mayoritariamente por sobre L50%. A diferencia de brótula, la variación intra e interanual no tuvo grandes mayores fluctuaciones.  Para cojinoba del sur la variación de las tallas medias a través de los años fue más fluctuante, con años como el 2000 y 2015 con individuos mayores al L50%, al igual que durante los meses de enero y diciembre.
+
+
+#### b) Pesos a la talla
+\quad
+Respecto a los parámetros gravimétricos para estas tres especies, los pesos como función de la longitud total de brótula fueron extraídas del estudio realizado por Chong *et al*. (2017) y para los casos de las cojinobas moteada y del sur, desde Chong *et al*., (in press) (**Figura 8**, **Figura 9**).
+\vspace{0.5cm}
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Figuras/Imagen 8.png}
+\end{center}
+
+
+
+
+\textbf{Figura 8}. Relación longitud-peso e intervalos de confianza al 95% para brótula por sexo durante el período 1984-2006, en la zona sur-austral de Chile. (ex. Chong *et al*., 2017).
+\vspace{0.5cm} \normalsize
+
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Figuras/Imagen 9.png}
+\end{center}
+
+\textbf{Figura 9}. Relación longitud-peso de cojinoba del sur y cojinoba moteada, por sexo desde 1984-2014 para la zona sur austral (X-XII regiones) de Chile. (ex. Chong *et al*., in press.).
+\vspace{0.5cm} \normalsize
+
+
+En la **Tabla 4** se resumen los parámetros gravimétricos obtenidos desde los datos del monitoreo de brótula y cojinobas en los estudios de Chong *et al*. (2017) y Chong *et al*.(in press.)
+
+Si bien los estudios fueron realizados por sexos separados, en la tabla se utilizaron los parámetros que presentaron mejores ajustes, en este caso para machos de cojinobas y hembras de brótula. Una vez se proceda a realizar aproximaciones al estatus de estos recursos, es posible obtener los parámetros gravimétricos de cada especie desde los datos del monitoreo del IFOP si existe suficiencia en los tamaños de muestra para cada recurso.
+
+#### c) Bitácora de pesca. 
+\quad
+Este aspecto considera la revisión de la descripción de la operación de pesca asociada a los recursos, en donde la variable de capturas promedio fue analizada en función de los años, meses, profundidad y distribución latitudinal para brótula cojinoba moteada y cojinoba del sur (**Figura 10**). Con esta información es posible obtener indicadores de abundancia por recurso a partir de las capturas monitoreadas por IFOP asociadas a los puertos, bancos, meses años, etc. así como también, estas bitácoras contienen la información necesaria para el análisis de indicadores como la CPUE.
+
+
+\textbf{Figura 10}. Boxplot con las capturas promedios por año para brótula, cojinoba moteada y cojinoba del sur en las regiones X, XI y XII.
+\vspace{0.5cm} \normalsize
+
+Al realizar un análisis espacial de las capturas a través de los años considerados en este estudio, se consideraron los registros asociados a sistemas de cuadriculas distribuidos a lo largo de la zona de estudio. Los análisis anteriores fueron complementados con la distribución de los lances de pesca con registros positivos de cada especie a través de toda la serie analizada. En ellas, es posible apreciar que, para brótula, si bien la mayoría de los lances obtienen capturas entre los 0 y 50 t., las mayores capturas se realizaron entre los 51°LS y los 54°LS. Para brótula, los lances de pesca y capturas se concentraron principalmente en aguas exteriores entre las regiones XI y XII y en menor medida en la X Región (**Figura 11**).
+
+
+\textbf{Figura 11}. Mapa de distribución de lances con recurso brótula a través de toda la serie analizada (1997-2019).
+\vspace{0.5cm} \normalsize
+
+En el caso de las cojinobas no es posible reconocer patrones espaciales definidos. Lo anterior, posiblemente como consecuencia de la intermitencia de estos recursos en los lances de pesca de la flota arrastrera que opera en la zona sur austral de Chile. La distribución de cojinoba moteada (**Figura 12**) muestra mayor recurrencia de lances positivos en toda la zona de estudio y no es posible identificar zonas de agregación o cambios en los patrones de distribución y captura del recurso. Si bien la pesquería comienza débilmente frente a las costas de la X Región, a través de los siguientes años, esta especie se ha capturado en forma intensa en toda la zona de distribución de este estudio, es decir entre la X Región y la XII Región. 
+
+
+
+\textbf{Figura 12}. Mapa de distribución de lances con recurso cojinoba moteada a través de toda la serie analizada (1997-2020)
+\vspace{0.5cm} \normalsize
+
+En la cojinoba del sur, es posible identificar un patrón temporal, en donde la intensidad y ocurrencia de esta especie en los lances de pesca de la flota arrastrera han disminuido a medida que pasan los años, en el cual, y comprobado también a través de cifras oficiales, la cojinoba del sur ha diezmado su distribución y disponibilidad en la zona de estudio considerada (**Figura 13**). Los principales focos de abundancia de cojinoba del sur se encuentran entre los 53°LS y los 56.5°LS. Las magnitudes de captura en los lances varían entre los 1 y 30 t.
+
+El análisis exploratorio de los datos ha permitido identificar patrones temporales y espaciales de los recursos objeto de este análisis, y a su vez ha permitido identificar la suficiencia de información para probar hipótesis de dinámicas poblacionales y aplicar modelos de evaluación, lo que será detallado en el punto 4.2.
+
+
+\textbf{Figura 13.} Mapa de distribución de lances con recurso cojinoba del sur a través de toda la serie analizada (1997-2018).
+\vspace{0.5cm} \normalsize
+
+\pagebreak
+\normalsize
+# 3. METODOLOGÍA DE TRABAJO
+
+## 3.1. Objetivo específico 1:
+\vspace{-0.2cm}
+*"Detallar y protocolizar el procedimiento de manejo vigente para la pesquería."*
+\vspace{0.5cm}
+
+En el proceso de evaluación stock, una de las tareas fundamentales consiste en dimensionar el nivel de conocimiento de las unidades poblacionales en estudio, determinar el nivel de calidad de datos e información permite definir el tipo de enfoque de modelamiento que es posible usar para determinar los niveles poblacionales del stock, así como también definir procedimientos para el cálculo de Puntos Biológicos de Referencia (PBR).
+
+Para realizar una evaluación en los recursos señalados, el análisis genérico procede de la siguiente forma:
+
+### Revisión de antecedentes y análisis de datos
+
+Las tareas a realizar abarcan, desde la actualización y consolidación del conocimiento y de los antecedentes disponibles referidos a aspectos de la biología, dinámica y ecología de la especie. Además, se recabarán y compilarán todos los datos e información de las especies disponibles en el país y en el extranjero. La información y los análisis propenderán a aplicar un enfoque temporal y geográficamente explícito, cuando sea posible y pertinente. Las escalas y niveles de agregación espacial y temporal, deberán ser definidos en el contexto del mismo estudio, dentro de lo considerado por la Subpesca, de acuerdo con la información disponible, las recomendaciones de expertos y los lineamientos definidos por los Comités Científico Técnicos y la Subsecretaría de Pesca y Acuicultura al efecto.
+
+### Evaluación de Stock
+
+#### i)	Elaboración de los indicadores de abundancia
+\quad
+Se deberá identificar las fuentes de información (e. g., bitácoras, monitoreos, estudios y publicaciones científicas, entre otros) y definir fundadamente el conjunto de datos a emplear para la estimación de los índices de abundancia, así como su forma de utilización (e. g., indicadores absolutos o relativos).
+Asimismo, deberá informar la incertidumbre asociada a los indicadores propuestos para utilizar en la evaluación.
+
+#### ii)	Proposición de (los) modelo(s) candidatos para la evaluación de stock
+\quad
+Se deberá categorizar el nivel de incertidumbre de cada caso de estudio (e. g., recurso y su pesquería) conforme al nivel de conocimiento, cantidad y calidad de la información disponible, asimilándolas a alguno de los siguientes estándares de calidad. Siguiendo el criterio de Restrepo et al. (1998), basado en la calidad de la información (datos) que aporta la evaluación de stock, los stocks (recursos) se podrán clasificar como:
+
+##### Estándar completo (“Data-Rich”)
+\quad
+Se pueden realizar estimaciones confiables del rendimiento máximo sostenido (RMS) y/o de cantidades relacionadas, así como de la abundancia del stock. La evaluación puede ser sofisticada e incorporar la mayor parte de las fuentes de incertidumbre o bien una cantidad razonable de ella.
+
+##### Estándar medio (“Data-Medium”)
+\quad
+No se disponen de estimaciones confiables del rendimiento máximo sostenido y/o cantidades relacionadas, ya sea porque no están disponibles o bien tienen un uso limitado debido a características particulares de la historia de vida del recurso, a la pobreza o falta de contraste de los datos, alta variabilidad del reclutamiento o cambios ambientales. Sin embargo, existen estimaciones confiables del tamaño del stock y de todos los parámetros claves de la historia de vida (crecimiento) y de la pesquería (selectividad).
+
+##### Estándar pobre (“Data-poor”)
+\quad
+No existen estimados confiables del máximo rendimiento sostenido, de la abundancia del stock, de los parámetros vitales ni de los parámetros de la pesquería. La evaluación es mínima y la incertidumbre se aproxima sólo cualitativamente. No se pueden realizar cálculos de rendimientos por recluta o biomasas desovantes por recluta.
+
+### a.	Datos, parámetros y evaluación directas o indirectas usadas
+
+Para el desarrollo y selección de (los) método(s) y modelo(s) candidato(s) para estimar las variables de estado y flujo del stock, se observarán estrictamente criterios de parsimonia en su diseño, en función del nivel de conocimiento y de la información o datos disponibles. Su aplicación y correcto desempeño será evaluado y comprobado (e. g., simulación, modelos estandarizados, etc.), junto con un exhaustivo análisis de la incertidumbre de estimación que se genere de su aplicación. 
+
+Independientemente del nivel del estándar, se deberá además identificar y recomendar a la Subsecretaría de Pesca y Acuicultura, la realización de estudios, cruceros, investigaciones, monitoreo y otras acciones conducentes a mejorar el estado de conocimiento del recurso en cuestión y la pesquería, con el fin de allanar las brechas de conocimiento e información conducentes a reducir los niveles de incertidumbre.
+
+Las variables relevantes tales como biomasa desovante (o adulta), reclutamientos y mortalidad por pesca entre otras a definir serán estimadas en el proceso de evaluación de stock. En este mismo proceso serán estimadas las bandas de incertidumbre para las variables de estado relevantes que definen el diagrama de fases sobre el estatus de los recursos que se explica a continuación. 
+
+Si bien esta forma de clasificar stock de acuerdo a sus datos es ampliamente usada, durante la ejecución del convenio 2014, el IFOP desarrolló el proyecto “Revisión de los puntos biológicos de referencia en las pesquerías nacionales”, el cual constituye un avance importante en la definición formal de un sistema de niveles o “tiers” de calidad de datos e información para las pesquerías chilenas. En el marco de este proyecto, entre el 9 y 13 de diciembre de 2013 en la ciudad de Viña del mar, se realizó el primero de tres talleres de trabajo con la participación de expertos extranjeros y nacionales.
+
+El objetivo específico del primer taller fue definir y/o establecer los estándares técnicos y los métodos disponibles para estimar el rendimiento máximo sostenible (RMS) por especies y los puntos biológicos de referencia (PBR) asociados. En el taller, los científicos chilenos y siete científicos internacionales desarrollaron un Sistema de Niveles (Tier System) para clasificar las poblaciones de acuerdo al tipo de evaluación que se podría realizar y el tipo de puntos de referencia que se podrían estimar ($F_{RMS}$ y $B_{RMS}$ o proxies), expusieron varios métodos mediante los cuales se podrían computar los puntos de referencia, y recomendaron métodos para calcular los puntos de referencia para cada una de las 24 poblaciones en estudio. El reporte de este primer taller (Payá *et al*., 2014) se encuentra disponible en el sitio web del proyecto: https://sites.google.com/site/brpforchileanfisheries/reports.
+
+De acuerdo a la nueva Ley de Pesca chilena, los expertos señalan que podría ser más conveniente establecer un Sistema de 3 niveles para las poblaciones, que no esté basado en el tipo de datos disponibles, tal como ha hecho hasta la fecha, sino en el tipo de determinación de PBR que sea posible en cada caso. Además, se compilaron métodos para determinar los PBR para la biomasa desovante y la mortalidad por pesca en cada nivel. Para representar el desarrollo histórico de la biomasa desovante versus la BRMS se necesita un valor absoluto (o proxy) de este último.
+
+El sistema de niveles descrito anteriormente es relativamente distinto al sistema de Datos Ricos, Datos Moderados y Datos Pobres utilizados por el US National Marine Fisheries Service (Restrepo *et al*., 1998). El sistema de niveles descrito por (Payá *et al*., 2014) hace hincapié en el tipo de análisis que son viables y no en la cantidad o la calidad de los datos. Lo anterior significa que, aunque no se disponga de puntos de referencia RMS a partir de una relación stock-recluta confiable, si es posible utilizar un valor de BRMS proxy (basado en la literatura y la experiencia) para estimar los PBR objetivos de esta pesquería.
+
+Para determinar el diagnóstico y estatus de los principales recursos pesqueros nacionales en el contexto de la nueva Ley General de Pesca y Acuicultura (LGPA) se revisan los puntos biológicos de referencia (PBR) y marco biológico a emplear que sean próximos y coherentes con este tipo de recursos. La actual legislación establece que las pesquerías deberán alcanzar o estar en torno al Rendimiento Máximo Sostenido (RMS) así como los niveles límite que definen el agotamiento o colapso del recurso. El RMS se produce cuando el stock desovante se reduce sin impactar el reclutamiento promedio y para ello es necesario estimar los PBR. 
+
+Para un ordenamiento más acabado de la clasificación de datos y modelos de evaluación posibles para cada especie, es decir, brótula y cojinobas, se utilizará el sistema de “Tier” para determinar PBRs, que fueron definidos por (Payá, 2014). 
+ 
+## 3.2. Objetivo específico 2:
+\vspace{-0.2cm}
+*"Implementar el procedimiento de manejo, determinando el estatus del recurso y la captura biológicamente aceptable (CBA)."*
+\vspace{0.5cm}
+
+En aquellos casos en que el nivel de desarrollo del conocimiento, la información o los datos fueron limitados o con altos niveles de incertidumbre, de forma que limiten o impidan la aplicación en propiedad de procedimientos de evaluación y análisis con estándares altos (i. e., para datos ricos), se desarrollarán e implementarán procedimientos y métodos alternativos (Modelos de data limitados) adecuados a la disponibilidad de información con el fin de determinar el estatus de los recursos que se encuentren en esta condición, los que deberán propender a establecerlo con la menor incertidumbre posible (Carmichael & Fenske, 2010). 
+
+En la última década se ha reconocido a estas especies capturadas como pesca incidental como una práctica habitual en aguas chilenas (San Martín *et al*., 2016), por lo cual se ha posicionado como un problema critico necesario de abordar, manejar y resolver. El ser consideradas parte de las capturas incidentales de la flota de arrastre, ha determinado un reducido interés en estudiar aspectos sobre su historia de vida, y los esfuerzos por acortar la brecha de conocimiento son reducidos (Bernal *et al*., 2018). La caracterización de aspectos biológicos básicos como distribución latitudinal/batimétrica, reproducción, alimentación o estructura poblacional, son antecedentes relevantes para avanzar en el conocimiento del estatus de estas poblaciones.
+
+Para determinar el estatus de los recursos brótula y cojinobas, se establecerá un nivel de requerimientos técnicos que define los estándares de análisis y evaluación para las pesquerías analizadas, conforme a los niveles de conocimiento, información y calidad de los datos disponibles para esos fines, como se detalla más adelante.
+
+### 3.2.1. Modelo conceptual para la evaluación de stock
+
+Desde aquí en adelante, los antecedentes y evaluación de stock presentados corresponden a los recursos brótula, cojinoba moteada y cojinoba del sur. Estos recursos poseen una amplia distribución en la zona de interés, comprendida entre la Región de Los Ríos y Región de Magallanes. Dadas las características de distribución de estos recursos y la actividad extractiva pesquera que cubre estas tres regiones, se podría sugerir la existencia de una población con un nivel de mezcla entre sí (dynamic pool), desde la etapa de reclutamiento en adelante.  Es por ello, se considerará como unidad poblacional la zona de estudio como unidad estructural para la evaluación para cada uno de los recursos.
+
+### 3.2.2. Propuesta de modelos de evaluación de acuerdo a información disponible.
+
+Durante el desarrollo y avance de metodologías de evaluación de stock para pesquerías limitadas en datos en la literatura científica internacional, han surgido dos enfoques claramente distinguibles entre ellos. Por un lado, los métodos basados en series de capturas con condiciones de agotamiento, los cuales fueron los primeros ejercicios cuantitativos para la evaluación con limitación de datos, dado que los algoritmos derivados, principalmente de modelos de excedente productivo, eran sencillos y con supuestos relativos a su dinámica son conceptualmente entendibles y abordables por él analista. Por otro lado, y con un avance robusto en los últimos cinco años, están los modelos de evaluación de stock basados en el potencial reproductivo y parámetros de historia de vida de los recursos, los cuales identifican, a través de las estructuras de tallas, el impacto de la presión pesquera sobre las cohortes de los stocks explotados. En este reporte, identificamos que, para los tres recursos en cuestión, aplicaremos modelos de producción para brótula y cojinoba moteada, y un modelo para conocer el potencial reproductivo basado en tallas para cojinoba del sur.
+
+Si bien en el documento anterior se realizó una clasificación para cada recurso, este año se plantea un esquema conceptual distinto, el cual se estructura de forma secuencial en términos de necesidad de datos e información en un análisis modelo basado, y a su vez, con el objetivo de ir conociendo la pesquería y su dinámica. Para ello, hemos propuesto metodologías de evaluación del Nivel (“Tier”) 2 y 3, lo cual responde a una estrategia técnica para ir conociendo las pesquerías y complejizando los análisis de evaluación de stock de cada uno de los recursos objetivos de este informe. 
+
+Para abordar la evaluación de stock de brótula, cojinba moteada y cojinoba del sur, en este proyecto se implementaron dos modelos de evaluación de acuerdo a la dinamica de la población explotada y de la disponibilidad de información en cada pesquería. Para brótula y cojinoba moteada se propone un modelo de producción enmarcados en el Nivel Tier 2. En el caso de cojinoba del sur, la disponibilidad de datos es menor, pero se aplicará un modelo basado en tallas para conocer el estado de explotación, clasificado en el Nivel Tier 3. Si bien las necesidades de establecer estatus por parte de los administradores aún no se solicitan para este tipo de recursos, y como en el proyecto de PBR de IFOP (Payá *et al*., 2014) no se analizaron las especies brótula y cojinobas ni sus PBR asociados, se procederá a usar los análisis analógicos para peces demersales, dado que, por dinámica de vida y parámetros biológicos, son el grupo idóneo a los recursos objetivo de este informe.
+
+A continuación, detallaremos algunos modelos seleccionados para ser aplicados en los recursos objetivos contenidos en este documento con la precaución y atención de las necesidades conceptuales y estructurales para la aplicación de estos en el recurso y la pesquería objetivo.
+
+#### 3.2.2.1. SPiCT, Stochastic Surplus Production Model in Continuous Time (Peteresen & Berg, 2017)
+\quad
+Los modelos de producción se utilizan para evaluar biomasa y nivel de explotación de poblaciones marinas en situaciones de datos limitados donde la información de la edad y el tamaño no están disponibles (Punt, 2003). Estos modelos se aplican principalmente a acciones donde los únicos datos 
+
+disponibles son observaciones de capturas comerciales junto con algún índice de biomasa explotable, como capturas comerciales por unidad esfuerzo (CPUE), densidades medias, estimaciones de abundancia a través de surveys o derivado de una encuesta científica fecha (Polacheck *et al*. 1993). Aplicaciones comunes de los modelos de producción excedente incluyen grandes peces pelágicos migratorios como el atún, tiburones y peces picudos, pero también crustáceos que son generalmente difícil de envejecer (por ejemplo, Smith y Addison 2003). En la formulación de Schaefer (1954), la producción máxima ocurre cuando el tamaño de la población es la mitad de su capacidad de carga. Esta restricción se evita en forma generalizada. De Pella y Tomlinson (1969), donde la asimetría de la función de producción permite la máxima producción a cualquier biomasa por debajo de la capacidad de carga. Así, una población se explota de manera óptima en términos de biomasa si se cosecha para permanecer en la biomasa nivel que da como resultado la máxima producción definido como el Rendimiento Máximo Sostenible (RMS).
+
+En este reporte se presenta una producción excedente estocástica modelo en tiempo continuo (Stochastic Surplus Production Model in Continuous Time, SpiCT, por sus siglas en inglés) (Pedersen & Berg, 2017), que incorpora dinámica tanto de la biomasa como de la pesca y error de observación tanto de las capturas como de la biomasa índices. El modelo tiene una forma estado-espacio que contienen proceso y observación- modelos de error (Polacheck *et al*., 1999) (Polacheck *et al*. 1993;(Prager, 2002), así como modelos de estado-espacio asumen capturas sin errores (Meyer y Millar 1999; Punt 2003; Ono *et al*,. 2012).
+
+El modelo utiliza datos observados sobre desembarques o capturas e índices, ya sean comerciales o de prospecciones y no incluye parámetros de historia de vida. Los modelos de producción como SpiCT generalmente funcionan mejor cuando hay mucho contraste en los datos (de esfuerzo, biomasa, tasa de captura) (Hilborn & Walters, 1993). Cuando la serie de tiempo es corta o no hay mucho contraste en los datos, es recomendable reducir la cantidad de parámetros en el modelo para promover la estabilidad del modelo.
+
+SpiCT está formulado como un modelo de estado-espacio e incorpora dinámicas relacionadas tanto con las pesquerías (F) como con la biomasa (B) en la forma de Pella & Tomlinson (1969). Estos dos procesos latentes se relacionan luego con los datos observados (capturas y captura por unidad de esfuerzo: CPUE, ya sea comercial o de prospecciones) mediante ecuaciones de observación, que incluyen términos de error. Se definen las ecuaciones del modelo;
+
+Ecuaciones de proceso (random effects):
+
+$Ecuaciones$
+
+
+Con información limitada, a menudo es difícil estimar n, en cuyo caso n se establece en 2 dando como resultado el modelo de Schaefer. De manera similar, no siempre es posible estimar $\alpha$ y/o $\beta$, en cuyo caso se establecen en 1, que es un supuesto común (Thorson *et al*., 2013). Sin embargo, este valor predeterminado asume el mismo error en la captura y del índice, lo que se desvía de los modelos de error de observación más simples que asumen que no hay error en la captura pero que pueden ser apropiados para poblaciones con datos limitados. SpiCT puede realizar proyecciones a corto plazo de la biomasa, así como de la mortalidad por pesca y las capturas, incluida la incertidumbre.
+
+La configuración predeterminada de SpiCT estima todos los parámetros, pero las configuraciones más simples fijan los parámetros n = 2, alfa, beta = 1, así como $B_0 /K$ (la relación entre la biomasa inicial y la capacidad de carga). 
+
+Los supuestos de modelos importantes compartidos por todos los modelos de producción incluyen:
+
+•	No se produce ninguna migración dentro y fuera de la población, ya que los cambios en la biomasa solo se producen a través del crecimiento a través de r y K y mediante la pesca.
+
+•	Sin efectos rezagados en la dinámica de la biomasa causados por la variabilidad de la distribución por tamaño, edad y sexo.
+
+•	Capacidad de captura constante, es decir ningún cambio en la tecnología de la técnica de pesca que cambia q.
+
+•	La selectividad puede seguir cualquier patrón siempre que sea constante en el tiempo.
+
+•	No se requiere ningún conocimiento de la mortalidad natural porque está incluida en la tasa de crecimiento intrínseca, r.
+
+•	No existe un subregistro sistemático de captura y esfuerzo. Un modelo de producción puede o no ser robusto ante el fracaso de este supuesto. Por ejemplo, si la captura y el esfuerzo se subestiman en la misma cantidad durante toda la serie de tiempo, las estimaciones de $B/B_{RMS}$, $F/F_{RMS}$ y $captura/RMS$ son válidas incluso si la captura, el RMS y la biomasa están subestimadas.
+
+Además de las estimaciones de los parámetros, el modelo proporciona estimaciones de los puntos biológicos de referencia $B_{RMS}$, $F_{RMS}$ y RMS, donde $B_{RMS}$ es la biomasa que conduce a la producción de excedente máxima (es decir, RMS), de manera similar $F_{RMS}$ es la mortalidad por pesca que conduce a RMS. Todas las estimaciones de los puntos de referencia incluyen incertidumbre (intervalos de confianza del 95%). Un beneficio adicional del paquete TMB es que los residuales de un paso adelante se proporcionan automáticamente, que deben ser independientes y distribuidos normalmente de manera estándar para que la salida del modelo sea válida. Las desviaciones de la independencia y la normalidad estándar de los residuos indican que se han violado los supuestos del modelo. Por lo tanto, es importante informar los diagnósticos residuales junto con los resultados del modelo de manera que se puedan realizar interpretaciones correctas.  El SPiCT se implementa como un paquete R (R-Core Team, 2015) y usa el paquete Template Model Builder  (TMB, Kristensen *et al*. 2015) para obtener una estimación de modelo rápida y eficiente. https://github.com/mawp/spict. El manual de usuario de SpiCT se puede encontrar aquí: https://github.com/mawp/spict/blob/master/spict/vignettes/vignette.pdf
+
+
+#### 3.2.2.2. LBPA, Length-Based Pseudocohort Analysis (Canales *et al*., 2020)
+\quad
+El método de evaluación de poblaciones marinas con datos limitados llamado “Análisis de pseudocohortes basado en la talla” (Length-Based Pseudocohort Analysis, LBPA por sus siglas en inglés) (Canales *et al*., 2021) ajusta cohortes por recluta para capturar datos de frecuencia de talla, principalmente para estimar la selectividad en función de la edad, la tasa de mortalidad por pesca (F) completamente seleccionada y la proporción actual de biomasa virgen reproductora por recluta (SPR; (Brooks *et al*., 2010; Hordyk *et al*., 2016). El modelo supone que la población está en equilibrio y se puede ajustar a varios años de datos de estructuras de tallas simultáneamente.
+
+LBPA se basa en la supervivencia por recluta en función de la edad (Na), dada la mortalidad natural (M) y la mortalidad por pesca específica por edad, es decir: 
+
+
+
+## 3.3. Objetivo específico 3:
+\vspace{-0.2cm}
+*"Evaluar bajo incertidumbre la probabilidad de alcanzar los objetivos de manejo en plazos definidos bajo el procedimiento de manejo vigente."*
+\vspace{0.5cm}
+
+En base al modelo conceptual de la dinámica del stock respectivo que sustentó el enfoque y modelo de evaluación aplicado en brotula y cojinoba, se realizará un análisis de la productividad del stock y de sus posibilidades futuras de explotación considerando los parámetros e indicadores estimados precedentemente, con su incertidumbre asociada. El análisis considerará como criterio de explotación, aquel nivel de mortalidad que conduce a mantener el Rendimiento Máximo Sostenible, o a algún otro punto de referencia relativo al RMS para estos recursos.
+
+Los análisis considerarán proyecciones del recurso en un horizonte del año proximo considerando el modelo de dinámica del stock utilizado para la estimación de las variables de estado para el período de modelación. Las estrategias de explotación evaluadas corresponden a tres niveles referenciales de mortalidad por pesca constantes: $F=0,5*F_{RMS}$ $F=0,75*F_{RMS}$, $F=0,90*F_{RMS}$, $F=1,0*F_{RMS}$  (F actual o status quo).
+
+Se considera sólo para fines referenciales una mortalidad por pesca de Fsq con el objeto de medir el impacto de mantener la presión de pesca actual. La mortalidad por pesca de referencia es aquella que permite alcanzar el rendimiento máximo sostenible, consistente con los puntos biológicos de referencia. Para cada una de estas estrategias se estimó la trayectoria de biomasas y mortalidades por pesca. Junto a ello, se analizará el desempeño del modelo a través de un análisis retrospectivo.  El análisis retrospectivo es usado para evaluar la robustez del ajuste del modelo a la introducción de nueva información cuando esta es disponible. En el caso de brótula y cojinoba moteada. Probaremos 5 escenarios con series de tiempo de captura e índice que se acortan de 1 a 5 años al final observaciones. 
+
+En el caso la evaluación mediante un modelo basado en tallas (LBPA) para cojinoba del sur, por tratarse de un modelo basado en datos pobres no se realizará en esta ocasión un análisis de proyección; dado que no se tienen estimaciones de biomasas absolutas. 
+
+## 3.4. Objetivo específico 4:
+\vspace{-0.2cm}
+*"Detallar y analizar las fuentes de incertidumbre relevantes asociadas a errores de observación, de modelo, de proceso, de estimación y de implementación."* 
+\vspace{0.5cm}
+
+Toda evaluación de stock está sujeta a supuestos representados en procesos o parámetros que a menudo se suponen conocidos. La incertidumbre estructural se basa en analizar cómo podrían cambiar las variables poblacionales y la percepción respecto de la población frente a variaciones en parámetros considerados relevantes.
+
+Se presenta en este objetivo los análisis de incertidumbre asociados a distintos escenarios que podría afectar los resultados del modelo definido a priori como base para cada unidad de stock analizado. En este caso, se realizará un análisis de sensibilidad en relación con los aspectos mas inciertos en el modelo de datos pobres basado en tallas LBPA aplicado en cojinoba del sur, estos son, parámetros de crecimiento y de historia de vida. En este caso, evaluaremos la incertidumbre asociada a la evaluación frente a 16 escenarios de mortalidad natural respecto al escenario base (M= 0,27 año^-1^).
+
+
+
+\pagebreak
+\normalsize
+# 4. RESULTADOS
+
+## 4.1. Objetivo específico 1
+\vspace{-0.2cm}
+*"Detallar y protocolizar el procedimiento de manejo vigente para la pesquería."*
+\vspace{0.5cm}
+
+### 4.1.1.		Sistema de niveles (“Tier System”) para determinar los PBR.
+
+#### Nivel (“Tier”) 2. 
+Poblaciones respecto de las cuales existe un modelo de dinámica de la biomasa (también conocido como un modelo producción-stock o producción-excedente) o un enfoque empírico basado en datos de captura o abundancia relativa. También se pueden utilizar otros datos relevantes. Se pueden utilizar modelos dinámicos de biomasa para estimar los PBR dentro del modelo (dado que los PBR son una función de los parámetros estimados al ajustar el modelo a los datos disponibles). Los enfoques empíricos están basados en la serie histórica de los datos de captura y abundancia relativa sin ajustar un modelo de dinámica de la población. Las estimaciones o proxies para los PBR derivan de estas series en base a un criterio (por ejemplo, de otras fuentes de información tales como datos limitados de composición de edad o talla, o una opinión experta) acerca de la condición de la pesquería con relación al RMS durante segmentos de la serie de tiempo. Los proxies para algunos puntos de referencia se expresan en términos de la abundancia relativa (dependiente de la pesquería o independiente de la pesquería CPUE) y el esfuerzo de pesca. Cabe destacar que, a diferencia del nivel de agotamiento y RMS, el $F_{RMS}$ y $B_{RMS}$ estimado sobre la base de enfoques empíricos pueden ser pobres (Punt y Szuwalski, 2012).
+
+#### Nivel (“Tier”) 3.  
+Stocks respecto de los cuales existen datos insuficientes para permitir la aplicación de un modelo dinámico de la población. Los enfoques empíricos están principalmente basados en datos de captura (sin datos sobre abundancia relativa), se deben utilizar datos relacionados con los parámetros de la historia de vida y/o de cruceros. Los enfoques empíricos están basados en la serie histórica de la captura. Las estimaciones o proxies para el RMS se derivan de esta serie en base a un criterio (por ejemplo, en base a otras fuentes de información tales como datos limitados de composición de edad o tamaño, o criterios expertos) acerca de la condición de la pesquería con relación a RMS durante segmentos de la serie de tiempo. El método de Captura Promedio Corregida por concepto del Agotamiento (DCAC; MacCall 2009) es un ejemplo de un posible enfoque. La investigación en este ámbito está recibiendo gran atención y se han propuesto varios métodos con datos pobres. Dependiendo del método utilizado, estos podrían proporcionar valores para $F_{RMS}$ o $B_{RMS}$, pero es probable que la confiabilidad de estos valores sea baja.
+
+Para estimar el RMS se utiliza la estrategia de niveles y de acuerdo con la clasificación del estándar de información se definen los PBR o “proxy” que serán usados para determinar el estatus del recurso, proceso que es detallado en la **Figura 14**. 
+
+
+### 4.1.2. 	Marco de Referencia
+
+El marco biológico se define en el Informe Técnico N°02/2015, el cual a su vez está basado en el estudio “Revisión y Estimación de los PBR (Rendimiento Máximo Sostenido) para las principales pesquerías nacionales” (Payá *et al*., 2014), proyecto ejecutado por IFOP con la consultaría a expertos internacionales. El marco de referencia que aquí se propone podría ser adoptado por el CCT-CD se sustenta en la estimación de los Puntos Biológicos de Referencia (PBR) especie-específicos, esto a objeto de situar los indicadores de estado y flujo del stock analizado para estas pesquerías. 
+
+Desde los resultados de la evaluación de stock y su incertidumbre total se obtienen las variables de estado y PBRs que permiten diagnosticar el stock en estudio. Para ello, se utiliza el diagrama de Fase, en el cual se define el estatus del recurso. Este diagrama se construye a partir de la razón entre la biomasa desovante actual respecto de la biomasa desovante considerada objetivo ($BD/BD_{RMS}$) y la razón de mortalidad por pesca respecto de la considerada como objetivo de manejo ($F/F_{RMS}$).
+
+El monitoreo de la pesquería es la principal fuente de datos y proviene de la Base de Datos del Instituto de Fomento Pesquero, la que es poblada por el levantamiento de información que se realiza a partir del convenio Asesoría Integral para la toma de decisiones en pesca y acuicultura (ASIPA), encargado por la Subsecretaría de Pesca a IFOP desde el año 1996 en el llamado Proyecto de Seguimiento de Pesquerías Demersales y Aguas Profundas. Esta información permite obtener indicadores como son: la captura por unidad de esfuerzo (CPUE), las estructuras de tamaños de la pesquería, el peso medio a la talla, entre otros. Complementariamente se dispuso de información recopilada en proyectos financiados por el Fondo de Investigación Pesquera y Acuicultura (FIPA) y antecedentes biológicos recopilados en literatura científica formal. 
+
+
+
+\pagebreak
+## 4.2. Objetivo específico 2:
+\vspace{-0.2cm}
+*"Implementar el procedimiento de manejo, determinando el estatus del recurso y la captura biológicamente aceptable (CBA)."*
+\vspace{0.5cm}
+
+En función de los antecedentes presentados, se muestran los resultados de la evaluación de stock por recurso con los modelos descritos anteriormente, a saber; brótula y cojinoba moteada con modelo de producción *Stochastic Surplus Production Model in Continuous Time* (SPiCT) (Peteresen & Berg, 2017) y cojinoba del sur con un modelo de rendimiento por recluta basado en tallas *Length-Based Pseudocohort Analysis* (LBPA) (Canales *et al*., 2020).
+
+### 4.2.1. Brótula 
+
+#### 4.2.1.1. Datos de entrada 
+\quad
+En el caso de brótula, se presentan los principales datos utilizados en el modelo de producción utilizados en la zona de estudio, que en este caso fueron los registros oficiales de desembarques y índice de abundancia de capturas por horas de arrastre. Se incluyó un solo índice de abundancia en el modelo basado en la bitácora de pesca de la flota extractiva, en donde se registran los lances en una bitácora que cubre las regiones de Los Lagos, Aysén y Magallanes. Esto se utilizó como entrada de índice de biomasa relativa o explotable. Los datos de desembarques están disponibles desde 1979, sin embargo, existen incertidumbres asociadas con las capturas dado que este recurso no estaba definido como objetivo hasta mediados de los 2000s. La exploración del método descontó los primeros años de la serie de índice, en donde no se contó con información del monitoreo.
+
+##### Desembarques
+\quad
+Para todos los efectos se emplean las estadísticas de desembarques del Servicio Nacional de Pesca y Acuicultura (Sernapesca). Los registros de capturas son antiguos, y si bien datan desde fines de los 60’s, es sólo a partir de los 70’s cuando brótula comienza a ser identificada en los desembarques oficiales. En este caso, la Figura 15 presenta los desembarques realizados en las caletas asociadas a las regiones de estudio, puesto que el modelo utiliza toda la información de entrada relativa a la zona de estudio. Es posible observar que desde el año 2010 hasta hoy en día hubo un decrecimiento sostenido en los desembarques en estas caletas.
+
+##### Captura por Unidad de Esfuerzo Estandarizada
+\quad
+La Pesquería Demersal Austral (PDA) se divide en Unidad de Pesquería norte (41°28’-47°00’) y Unidad de Pesquería sur 47°00’- 57°00’. Sin embargo, en esta oportunidad no se realizó análisis por zonas. Los datos utilizados corresponden a las bitácoras de pesca de la Pesquería Demersal Austral, específicamente de las flotas arrastreras provenientes del Servicio Nacional de Pesca (SERNAPESCA) y del Instituto de Fomento Pesquero (IFOP), estas bases comprenden el período 1997-2020. 
+
+La dimensión inicial datos correspondientes a la flota de arrastre y especie brótula es de 19764 registros totales, a los cuales se le aplican los siguientes filtros con el fin de eliminar datos atípicos. 
+
+-	Horas de arrastre mayores a 0 y menores a 10, reduciendo la base a 19734 registros.
+-	CPUE mayores a cero, que no contengan NA’s, reduciendo la base a 19568 registros.
+-	Capturas menores a 20 toneladas por lance, obteniendo una base de datos final de 19543 registros. 
+
+La distribución de los datos de CPUE, captura y esfuerzo (HA) se presentan en la **Figura 16**.
+
+La captura total de brótula bordea las 500 toneladas a inicios del período, alcanzando las 2628 toneladas en 2009, posteriormente los niveles decrecen para alcanzar las 160 toneladas totales en 2019 y 30 toneladas en 2020; con valores promedio para 2019 de 0.42 toneladas y para 2020 de 0.15 toneladas (**Tabla 7**).
+
+En las **Figura 17** y **Figura 18** se presentan las horas de arrastre (HA) y la CPUE nominal (ton/HA) por año. Las horas de arrastre se caracterizan por presentar un primer periodo de estabilidad en torno a las 3 horas de arrastre, un declive importante en el año 2009 a 2.3 horas de arrastre y, posteriormente un aumento creciente hasta final del del periodo, alcanzando las 4.2 horas de arrastre en 2020 (**Tabla 8**).  La CPUE nominal histórica presenta dos valores máximos, en los años 2004 y 2009 (0.65 ton/HA y 0.8 ton/HA respectivamente) debido a las altas capturas obtenidas en esos años (1872 y 2628 toneladas respectivamente) y horas de arrastre por debajo de las 3 horas. Los CPUE nominal decrece desde el año 2015, hasta alcanzar un mínimo histórico de 0.035 ton/HA. 
+
+La **Figura 19** contiene el la captura promedio en kilógramos por año y por buque. Esta gráfica permite detectar aquellos buques que solo tuvieron participacion durante el inicio del período y solo por unos pocos años. A diferencia de aquellos buques que, aun que capturan este recurso de forma incidental y no como pesca objetivo, presentan capturas importantes de brótula durante todo el período, evidenciando una disminución de la captura de brótula para todos los buques desde el 2015 en adelante. 
+
+##### 4.2.1.2. Resultados del Stock Assessment (Variables poblacionales).
+\quad
+La biomasa relativa del stock de brótula parece haber disminuido aproximadamente 1.5 en 2019, sin embargo, están por sobre un eventual PBR del RMS indicado en la línea negra. Además, se estima un F en 0.02 años^-1^, lo cual se encuentra muy por debajo de el FRMS estimado en 0.74 años^-1^, considerando esto con los datos de captura estables en los últimos años.  Amplios intervalos de confianza como lo indica la zona sombreada de los gráficos para los parámetros estimados y la serie de tiempo de biomasa puede ser una consecuencia de estas tendencias de datos. Además, un índice de biomasa en constante disminución y un agregado estable la captura de biomasa solo puede explicarse por aumentos en la presión pesquera (**Figura 20**).
+
+
+La **Tabla 9** muestra las estimaciones de los parámetros del modelo con Intervalos de confianza del 95% para el modelo de producción excedentaria. Hay que tener en cuenta que el intervalo de confianza para el parámetro de forma de producción n incluye el simétrico (Schaefer) caso n = 2. De este modelo t, no podemos decir con certeza si la producción de biomasa está sesgada. La capacidad de carga para el stock explotable se prevé que sea aproximadamente 24 mil t. para la curva de producción general. Sin embargo, el intervalo de dependencia es extremadamente amplio con un intervalo más bajo de 4300 t. y un intervalo superior de 135 mil t. Claramente, las predicciones del modelo están sufriendo debido a la escasez de datos. Sin embargo, el modelo proporciona una primera estimación de la abundancia absoluta. Con respecto a las variables de estado calculadas consideran un nivel de biomasas para el ultimo año de 11 mil t. 
+
+##### 4.2.1.3. Diagrama de fase brótula
+\quad
+La **Figura 21** muestra la evolución de la biomasa y la mortalidad por pesca desde el año inicial (aquí 1978) indicado con un círculo hasta el año terminal (aquí 2020) indicado con un cuadrado. El diamante amarillo indica la biomasa media durante un largo período si se mantiene la presión pesquera actual (2019). Este punto se puede interpretar como el equilibrio de captura y se denota E(Boo) en la leyenda de la figura como una forma estadística de expresar la expectativa de la biomasa como t-->oo.  Esta pesquería ha estado sometida a bajos niveles de presión pesquera en los últimos años, por lo cual su estado representado por el diagrama de fase se encuentra en niveles subexplotados.
+
+Una línea roja discontinua vertical en Bt=0 indica el nivel de biomasa por debajo del cual la población se ha desplomado. Esta pesquería comienza en un estado de vulnerabilidad el año 1978.  Es importante visualizarlos conjuntamente ya que los dos puntos de referencia están altamente (negativamente) correlacionados.
+
+\pagebreak
+### 4.2.2. Cojinoba moteada
+
+#### 4.2.2.1. Datos de entrada 
+\quad
+En el caso de cojinoba moteada, se presentan los principales datos utilizados en el modelo de producción utilizados en la zona de estudio. Se incluyó un solo índice de abundancia en el modelo basado en la bitácora de pesca de la flota extractiva, en donde se registran los lances en una encuesta que cubre las regiones de Los Lagos, Aysén y Magallanes. Esto se utilizó como entrada de índice de biomasa relativa o explotable. Los datos de desembarques están disponibles desde 1979, sin embargo, existen incertidumbres asociadas con las capturas dado que este recurso no estaba definido como objetivo hasta mediados de los 2000s. La exploración del método descontó los primeros años de la serie de índice, en donde no se contó con información del monitoreo.
+
+##### Desembarque
+\quad
+Para todos los efectos se emplean las estadísticas de desembarques del Servicio Nacional de Pesca y Acuicultura (Sernapesca). Los registros de capturas son antiguos, y si bien datan desde fines de los 60’s, es sólo a partir de los 90’s cuando cojinoba moteada comienza a ser identificada en los desembarques oficiales. En este caso, la **Figura 22** presenta los desembarques realizados en las caletas asociadas a las regiones de estudio, puesto que el modelo utiliza toda la información de entrada relativa a la zona de estudio. Si bien los aumentos de registros han sido notorios desde inicios del 2000, esto debe ser revisado con detalle, considerando que esta especie comienza a registrarse como tal en la medida que aparecían en los lances de pesca. 
+
+##### Captura por Unidad de Esfuerzo 
+\quad
+Al igual que para brótula, los datos para la construcción del índice de abundancia están referidos a la zona de la Pesquería Demersal Austral (PDA).  Los datos utilizados corresponden a las bitácoras de pesca de la Pesquería Demersal Austral, específicamente de las flotas arrastreras provenientes del Servicio Nacional de Pesca (SERNAP) y del Instituto de Fomento Pesquero (IFOP), estas bases comprenden el período 1997-2020.  La dimensión inicial datos correspondientes a la flota de arrastre y especie cojinoba moteada es de 26964 registros totales, a los cuales se le aplican los siguientes filtros con el fin de eliminar datos atípicos. 
+
+- Horas de arrastre mayores a 0 y menores a 10, reduciendo la base a 26893registros.
+- CPUE mayores a cero, que no contengan NA’s, reduciendo la base a 26530 registros.
+- Captura menor a 30 toneladas, obteniendo una base de datos final de 26499. 
+
+La distribución de los datos de CPUE, captura y esfuerzo (HA) se presentan en la **Figura 23**.
+
+La captura de cojinoba moteada se caracteriza por ir en aumento desde los años 90, en donde no superó las 500 toneladas, hasta alcanzar un máximo de 4363 toneladas en el año 2016. Para el año 2020 la captura de cojinoba moteada alcanzó las 768 toneladas (**Tabla 10**).
+
+En las **Figura 24** y **Figura 25** se presentan las horas de arrastre (HA) y la CPUE nominal (ton/HA) por año. Las horas de arrastre se encuentran entre 2.5 y 3.6 horas, con excepción de los años 2019 y 2020 con valores de 3.8 y 4.1 horas de arrastre respectivamente (**Tabla 11**). Este aumento en las horas de arrastre se observa progresivamente desde el año 2009 al igual que en el recurso cojinoba moteada.  La CPUE nominal incrementa desde comienzos de la serie, con valores de 0.2 ton/HA hasta alcanzar el máximo histórico en 2014 con 0.96 ton/HA. Los últimos 6 años, la CPUE nominal ha disminuido debido al incremento en las horas de arrastre y la disminución de las capturas, alcanzando las 0.36 ton/HA en 2020.
+
+La **Figura 26** contiene el la captura promedio en kilógramos por año y por buque. Siendo esta una pesquería principalmente operada por la flota industrial, la gráfica permite detectar aquellos buques que solo tuvieron participacion durante el inicio del período y solo por unos pocos años. A diferencia de aquellos buques que, aún que capturan este recurso de forma incidental y no como pesca objetivo, presentan capturas importantes de brótula durante todo el período, evidenciando una disminución de la captura de cojinoba moteada para todos los buques desde el 2015 en adelante.
+
+#### 4.2.2.2. Resultados del Stock Assessment (Variables poblacionales)
+\quad
+Los resultados del modelo de producción aplicado en cojinoba moteada para la unidad de pesquería de las regiones X, XI y XII indican que la biomasa relativa del stock de cojinoba moteada parece haber disminuido aproximadamente 18000 t. en 2019, lo cual las ubica en un eventual PBR del RMS indicado en la línea negra. Además, se estima un F en 0.155 años^-1^, lo cual se encuentra por sobre de un $F_{RMS}$ estimado en 0.148 años-1, considerando esto con los datos de captura estables en los últimos años.  En este recurso, la presión de pesca de los últimos años ha sido intensa, lo cual explica en parte los resultados de esta evaluación (**Figura 27**).
+
+A su vez, se calculan parámetros poblacionales del stock. En este caso obtenemos la capacidad de carga del sistema (K) en 61 mil t. y una tasa de crecimiento poblacional (r) de 0.08. También es posible obtener los estimados de biomasas y mortalidades por pesca obtenidos bajo dos procesos, uno determinista y el estocástico. A su vez podemos identificar la diferencia de magnitud entre estos dos métodos. Estos y otros parámetros estimados junto a sus intervalos de confianza se detallan en la **Tabla 12** .
+
+
+#### 4.2.2.3. Diagrama de fase
+\quad
+
+La **Figura 28** muestra la evolución de la biomasa y la mortalidad por pesca conjugadas desde el año inicial (aquí 1986) indicado con un círculo hasta el año terminal (aquí 2020) indicado con un cuadrado. El diamante amarillo indica la biomasa media durante un largo período si se mantiene la presión pesquera actual (2019). Este punto se puede interpretar como el equilibrio de captura y se denota E(Boo) en la leyenda de la figura como una forma estadística de expresar la expectativa de la biomasa como t-->oo. Esta pesquería ha estado sometida a altos niveles de presión pesquera en los últimos años, por lo cual su estado representado por el diagrama de fase se encuentra en niveles subexplotados pero que dentro del intervalo de confianza tienden a una zona de sobrexplotación. Una línea roja discontinua vertical en Bt = 0 indica el nivel de biomasa por debajo del cual la población se ha desplomado. Es importante visualizarlos conjuntamente ya que los dos puntos de referencia están altamente (negativamente) correlacionados.
+
+\pagebreak
+### 4.2.3. Cojinoba del sur
+
+#### 4.2.3.1. Datos de entrada 
+\quad
+Para el análisis de el estado de explotación de la población de cojinoba del sur, se utilizaron los datos disponibles del monitoreo e información científica los cuales fueron estructuras de tallas del recurso entre los años 1997 y 2019.   En este caso los datos disponibles fueron estructuras de tallas por sexo provenientes del muestreo que realiza IFOP entre los años 1997 y 2019. Al igual que en el reporte anterior (Mardones *et al*., 2019) este año no se pudieron construir índices de abundancia. Junto a ello se dispone de un conjunto de parámetros de historia de vida del recurso evaluado. Con estos antecedentes se procedió a evaluar el estatus del recurso a través de un método del Tier 3 basado en tallas.
+
+#### 4.2.3.2. Ajustes del modelo a los datos
+\quad
+Si bien las estructuras de tallas de esta especie son difíciles de reconstruir, se pudo obtener representatividad a través de las frecuencias de tamaños y LBPA pudo capturar las señales de los tamaños de cojinoba del sur a través de los años tal como o muestra la **Figura 29**.
+
+
+Por otro lado, LBPA entrega las tendencias de parámetros a través de las tallas y edades del recurso, como por ejemplo longitud a la edad captura a la edad, desviación a la edad y selectividad a la edad (**Figura 30**).
+
+#### 4.2.3.3. Resultados Evaluación de Stock LBPA
+\quad
+De acuerdo con las estimaciones del LBPA, la selectividad de esa pesquería estaría vulnerando parte de la población que aun no ha tenido outputs reproductivos, es decir, se estarían capturando previo a alcanzar la madurez como lo ilustra la **Figura 31**.
+
+El LBPA tiene como objetivo generar a través de simulaciones las estructuras de tallas que no han estado bajo efectos de la pesca y comparar estas con las estructuras de tallas calculadas en función del SPR objetivo. En el siguiente gráfico se estiman estas estructuras de cojinoba del sur y se comparan con la estructura de talla actual observada. Esto nos permite tener un patrón comparativo y los efectos de la pesquería sobre este recurso (**Figura 32**).
+
+
+El LBPA también permite implementar un grafico de rendimiento por reclutas que contiene información relativa a los PBR y a los niveles de mortalidad por pesca objetivos y actuales para la pesquería de cojinoba del sur. En el grafico de estructuras de tallas relativas podemos observar que el F actual esta por encima de un eventual F al SPR 40% calculado en 0.83 (**Figura 33**).
+
+
+\pagebreak
+## 4.3. Objetivo específico 3:
+\vspace{-0.2cm}
+*"Evaluar bajo incertidumbre la probabilidad de alcanzar los objetivos de manejo en plazos definidos bajo el procedimiento de manejo vigente."*
+\vspace{0.5cm}
+
+### 4.3.1. Brótula Proyección y escenarios
+
+Para hacer una proyección de biomasa o capturas en un modelo de producción se necesitan identificar los intervalos, para ello, se necesita adicionar un año a la serie de datos, en este caso, entre los años 1979 y 2019+1.  Las proyecciones son generadas como parte del usual del ajuste del modelo de producción. En la **Tabla 13** se presentan las predicciones de biomasas, F y capturas. 
+
+
+La proyección también se presenta en función de 7 escenarios de manejo relativos a distintos niveles de capturas, mortalidades por pesca y una referida al RMS como regla de control (**Figura 34**). Cada escenario es descrito en la **Tabla 14**.
+
+### 4.3.2. Cojinoba moteada Proyección y escenarios
+
+Para las proyecciones en la pesquería de cojinoba moteada para biomasa o capturas en un modelo de producción necesita adicionar un año a la serie de datos, en este caso, entre los años 1986 y 2019+1.  En la **Tabla 15** se presentan las predicciones de biomasas, F y capturas. La  **Tabla 16** a su vez expone las estimaciones de biomasas y capturas frente a los distintos escenarios de manejo propuestos.
+
+
+Las proyecciones son generadas como parte del usual del ajuste del modelo de producción (**Figura 35**).  Estas proyecciones también son vinculadas a los distintos (7) escenarios de manejo pesquero propuesto para cojinoba moteada descritos en la **Tabla 16**.
+
+
+
+
+\pagebreak
+## 4.4. Objetivo específico 4:
+\vspace{-0.2cm}
+*"Detallar y analizar las fuentes de incertidumbre relevantes asociadas a errores de observación, de modelo, de proceso, de estimación y de implementación."* 
+\vspace{0.5cm}
+
+
+### 4.4.1. Análisis retrospectivo Brótula
+
+El número de escenarios y, por lo tanto, las observaciones que se eliminan se pueden cambiar con el argumento nretroyear en la función retro usando la librería *“SPiTC”* (R-CRAN, 2014).  Los gráficos muestran los diferentes escenarios con diferentes colores. Para los datos de atún blanco, existe una alta coherencia entre los escenarios, excepto para las mortalidades de pesca de el segundo escenario (en rojo), que indica un gran aumento en F. En general, los primeros años de la serie, tienden a subestimar las variables poblacionales como B y F (**Figura x**).
+
+### 4.4.2. Análisis retrospectivo Cojinoba moteada
+
+Los análisis retrospectivos para cojinoba moteada en toda la serie temporal mostraron una sobrestimación de los cálculos de biomasa y biomasa relativa al RMS. Para el caso de mortalidad por pesca, esta tuvo un desempeño adecuado en términos de la estimación para cada escenario, pero con una gran incertidumbre asociada que se denota por la zona gris de la **Figura 37**.
+
+### 4.4.3. Analisis de sensibilidad Cojinoba sur
+
+Como parte de los objetivos del proyecto se presentan los análisis de incertidumbre relativos a resultados del modelo de datos limitados LBPA en la pesquería de cojinoba del sur. Para ello se analizaron 16 escenarios de mortalidad natural y su impacto en la estimación de los puntos de referencia asociados, en este caso, niveles de mortalidad por pesca actual y objetivo (**Tabla 17**). 
+
+A su vez, fue posible interpretar los resultados a través de una correlación simple entre los distintos escenarios de M y mortalidad por pesca, ya sea esta la actual y/u objetivo, que en este caso será el F al SPR 40% (**Figura 38**). Este análisis es un complemento de la información para identificar los impactos de la incertidumbre asociada a la estimación con LBPA y los parámetros utilizados.
+
+En la **Figura 39** es posible identificar el impacto de los distintos escenarios frente a las simulaciones de las estructuras de tallas, es decir, la talla observada relativa de cojinoba y la talla de la población no pescada. De esta manera es posible entender el efecto de M sobre los resultados del modelo basado en tallas. Los escenarios que mayor impacto tuvieron en el desempeño del modelo fueron el 11, 12, 13, 14 y 15.
+
+\pagebreak
+\normalsize
+# 5. ANÁLISIS Y DISCUSIÓN DE RESULTADOS
+
+El presente informe contiene un análisis exploratorio de datos y una propuesta metodológica de implementación de evaluaciones de stock que permitan el análisis del estado de los recursos brótula Salilota australis, cojinoba moteada Seriolella punctata y cojinoba del sur o ploma Seriolella caerulea en las regiones X, XI y XII correspondientes a la pesquería de la zona austral de Chile. Este informe presenta la continuidad del trabajo realizado el año 2018 (Mardones *et al*., 2019), en el cual, se realizó un levantamiento de información que tenía como objetivo establecer una evaluación de stock de estos tres recursos si la data e información estaba disponible. De este modo, para cumplir el objetivo principal de este informe, se estudiaron y analizaron las principales fuentes de información para estos tres recursos, a saber; cifras oficiales de desembarques y capturas, bases del monitoreo de la pesquería, informes técnicos y publicaciones científicas. Una de las principales piezas de información revisadas fueron las bases de datos provenientes del monitoreo de la pesquería arrastrera de la zona sur austral, proyecto de seguimiento que lleva a cabo IFOP. En este aspecto se revisaron los datos disponibles de las estructuras de tallas y las bitácoras de pesca de cada especie entre los años 1997 y 2019. Por lo tanto, los datos de entrada utilizados en cada evaluación de stock fueron las siguientes: a) Para el caso de brótula se utilizó datos de desembarque (desde 1978 hasta 2019) y CPUE nominal (desde 1997 hasta 2019). b) Para cojinoba moteada se utilizó datos de desembarque (desde 1986 hasta 2019) y CPUE nominal (desde 1997 hasta 2020) y c) para cojinoba del sur sólo se usaron datos de estructura de tallas (desde 1997 hasta 2019).
+
+Respecto al procedimiento de manejo, la actual legislación establece que las pesquerías deberán alcanzar o estar en torno al Rendimiento Máximo Sostenido (RMS) considerando las características biológicas de los recursos explotados. La nueva Ley General de Pesca y Acuicultura (LGPA) estableció que el Comité Científico Técnico será quien recomiende el marco biológico de referencia basado en la definición de puntos biológicos referencia (PBR). Por lo tanto, el objetivo de este estudio es comenzar a sentar las bases que permitan definir un marco biológico de referencia para estos recursos. Para estimar el RMS en este estudio se utilizó la estrategia de niveles que permitió clasificar a brótula y cojinoba moteada en el tier 2 y a cojinoba del sur en el tier 3 (de acuerdo al sistema para clasificar cada especie y/o pesquería en el sistema de “tiers” propuesto por Payá *et al*. (2014)).  De este modo la estimación de PBRs se realizó utilizando modelos de evaluación basados en el método 6, 7 y 8 (descripción en **ANEXO I**).
+
+En relación a la propuesta metodologíca de implementación de evaluaciones de stock, en el caso de brótula y cojinoba moteada (tier 2) se aplicó un modelo de producción excedentaria llamado SPiCT, Stochastic Surplus Production Model in Continuous Time (Peteresen & Berg, 2017). Este es un modelo de producción que considera los errores de proceso y de observación. Los principales supuestos de este modelo indican que se debe contar con una serie histórica de datos de captura e índices que tengan contraste, para que sus estimaciones fueran confiables. Este modelo permite estimar niveles de biomasa, mortalidades por pesca y un RMS. Junto a ello se generaron proyecciones y escenarios en distintos niveles de manejo propuesto (niveles de captura, mortalidades por pesca y una referida al RMS). En el caso de cojinoba del sur (Tier 3), la construcción de índices de abundancia no pudo ser posible, y los únicos datos disponibles fueron estructuras de tallas y parámetros de historia de vida.
+
+En función de esto, se aplicó un método basado en tallas llamado LBPA, Length-Based Pseudocohort Analysis (Canales *et al*., 2020). Los principales supuestos para el uso de estos métodos es saber que la pesquería tenga una selectividad del tipo logística, dado que se estima el potencial reproductivo del recurso en función de la fracción adulta que no esta siendo vulnerada por la pesquería. En este caso utilizamos parámetros de historia de vida del recurso y estructuras de tallas anuales desde el año 1997 al 2019. 
+
+
+Respecto a la unidad de stock, en este estudio se trabaja con la hipótesis de una unidad de stock entre las Regiones X a la XII para los tres recursos analizados, no obstante, el análisis exploratorio de los datos evidencia ciertos patrones en la distribución espacial de las capturas para estas especies que permitiría definir la unidad de stock sobre la base de un análisis espacial. Al respecto, en el caso de brótula y cojinoba moteada, las principales capturas fueron encontradas desde los 51° L.S. hacia el sur. Si bien en cojinoba del sur la disponibilidad de datos es menor, la distribución de las capturas es homogénea en todo el gradiente latitudinal entre las X y XII regiones. Por lo tanto, se sugiere continuar explorando la componente espacial en función de otras variables como esfuerzo, tallas, rendimientos, etc. 
+
+
+Los principales resultados mostraron que en el caso de brótula los registros de desembarques se reducen desde el 2010 a la fecha, del mismo modo, la CPUE nominal muestra una tendencia decreciente desde el 2010. Si bien la captura de estos recursos es de forma incidental, la captura promedio anual por buque también evidenció una disminución a partir del 2010.  Los resultados de la evaluación de stock muestran una tendencia similar a los índices utilizados, evidenciando consistencia. Las estimaciones de biomasa para el año 2019 fueron de aproximadamente 14 mil t., mientras que la mortalidad por pesca fue de 0.016 año^-1^, lo cual ubica al recurso por debajo de un eventual objetivo de manejo. La capacidad de carga de esta población se estimó en 24 mil t., mientras que su RMS fue calculado en 5.4  mil t.  De acuerdo al marco biológico utilizado en este estudio, el recurso ha estado sometido a bajos niveles de presión pesquera en los últimos años, por lo cual su estado se encuentra en niveles subexplotados. No obstante, estos resultados deben ser considerados preliminares debido a los altos niveles de incertidumbre que arroja el modelo utilizado (SPiCT) generado por la escasez de datos.  Para el caso de cojinoba moteada, los registros de desembarques muestran una tendencia positiva entre el 2000 al 2016 y luego una reducción en los niveles de desembarques los últimos tres años de la serie. Por otro lado, la CPUE nominal muestra una tendencia creciente desde el año 1997 hasta el 2014. Los últimos 6 años  los niveles disminuyen. Si bien la captura de este recursos es de forma incidental, la captura promedio anual por buque también evidencia una disminución a partir del 2010-2015. Los resultados de la evaluación de stock muestran una tendencia similar a los índices utilizados, evidenciando consistencia. las estimaciones de biomasa para el ultimo año de la serie fueron de 18.6 mil t. y la mortalidad por pesca fue de 0.107 año-1, lo cual ubica a esta pesquería muy próximo a un eventual objetivo de manejo que en este caso será de un $F_{RMS}$ =0.14 año-1. Respecto a la capacidad de carga de esta población, se determinó que sus niveles están en torno a las 70 mil t. y un RMS de 2.58 mil t. Considerando esta situación, se debe consignar que hoy en día los desembarques de este recurso están en torno a los 1.8 mil t. lo cual sugiere que esta muy cercano a los niveles objetivo.  De acuerdo con el marco biológico utilizado en este estudio, el recurso ha estado sometido a bajos niveles de presión pesquera en los últimos años, por lo cual su estado se encuentra en niveles subexplotados. No obstante, estos resultados deben ser considerados preliminares debido a los altos niveles de incertidumbre que arroja el modelo utilizado (SPiCT) generado por la escasez de datos. Para ambos recursos se generaron proyecciones y eventuales escenarios de manejo que podrían ser usados para la toma de decisiones. Finalmente, para el caso de cojinoba del sur, de acuerdo a los resultados de la evaluación del modelo base, y en función de una propuesta de PBR basado en Goodyear (1993) y Mace (1994) se propone un potencial reproductivo del 40% (SPR 40%) el cual fue estimado en un F = 0.83. El modelo estimo el nivel de mortalidad por pesca para cojinoba del sur en un 1.73 año^-1^, lo que ubica a esta población explotada por encima de un eventual objetivo de manejo de acuerdo con los resultados de un modelo basado en tallas. 
+
+
+Cabe destacar que si bien existen piezas de información robustas en ciertas pesquerías aquí analizadas, los análisis muestran muchas incertidumbre relacionadas posiblemente con cambios en los patrones de explotación o bien cambios ambientales que puedan afectar la disponibilidad y/o distribución de las especies de estudio. Esto debe ser considerado en futuros estudios en la medida que se sustenten con más información, ya sea de monitoreo o información científica.
+
+
+Por lo tanto, este reporte presenta los primeros pasos de un proceso de evaluación de stock formal para pesquerías incipientes en términos de su actividad extractiva, así como también de su monitoreo. De acuerdo con ello, las etapas para abordar este ejercicio fueron las siguientes: 1) análisis exploratorio de los datos e información científica disponible para cada recurso, 2) definición de un modelo conceptual que permita abordar una evaluación de stock, y por ultimo, 3) implementación metodológica de evaluación de stock en relación a la dinámica poblacional y la mejor información disponible. De acuerdo a ello, este reporte contiene el primer ejercicio de evaluación de stock en las especies brótula Salilota australis, cojinoba moteada *Seriolella punctata* y cojinoba del sur *Seriolella caerulea* en la pesquería de la zona austral de Chile recursos realizado por el Departamento de Evaluación de Recursos de IFOP. En la medida que las fuentes de información estén disponibles se podrá ir complejizando los métodos de evaluación como así también los marcos de referencia para la toma de decisiones.
+
+
+
+\pagebreak
+\normalsize
+# 6. REFERENCIAS BIBLIOGRÁFICAS
+
